@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdActivity">
+
+    <TextView
+        android:id="@+id/txtOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32" />
+
+    <Button
+        android:id="@+id/btnFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Кнопка 1"
+        app:layout_constraintEnd_toEndOf="@+id/txtOutput"
+        app:layout_constraintStart_toStartOf="@+id/txtOutput"
+        app:layout_constraintTop_toBottomOf="@+id/txtOutput" />
+
+    <Button
+        android:id="@+id/btnSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Кнопка 2"
+        app:layout_constraintEnd_toEndOf="@+id/btnFirst"
+        app:layout_constraintStart_toStartOf="@+id/btnFirst"
+        app:layout_constraintTop_toBottomOf="@+id/btnFirst" />
+
+    <Button
+        android:id="@+id/btnThird"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Кнопка 3"
+        app:layout_constraintEnd_toEndOf="@+id/btnSecond"
+        app:layout_constraintStart_toStartOf="@+id/btnSecond"
+        app:layout_constraintTop_toBottomOf="@+id/btnSecond" />
+</androidx.constraintlayout.widget.ConstraintLayout>
